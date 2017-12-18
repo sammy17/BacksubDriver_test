@@ -12,9 +12,13 @@ file(GLOB SOURCE_FILES
         "detection/*.h"
         "detection/*.cpp"
         "detection/*.hpp"
+        "include/*.h"
+        "maxi.cpp"
+        "drivers/*.h"
+        "drivers/*.c"
         )
 
-set(SOURCE_FILES maxi.cpp drivers/xbacksub.c drivers/xbacksub.h drivers/xfeature.c drivers/xfeature.h include/xparameters.h)
+#set(SOURCE_FILES maxi.cpp drivers/xbacksub.c drivers/xbacksub.h drivers/xfeature.c drivers/xfeature.h include/xparameters.h)
 
 add_executable(node ${SOURCE_FILES})
 

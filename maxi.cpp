@@ -268,7 +268,7 @@ int main(int argc, char *argv[]) {
     auto begin = std::chrono::high_resolution_clock::now();
     bool isFirst = true;
     Mat receive_image(240,320,CV_8UC1);
-    for (int it=0;it<1000;it++){
+    for (int it=0;it<10;it++){
         // Queue the buffer
        // auto begin = std::chrono::high_resolution_clock::now();
         if(ioctl(fd, VIDIOC_QBUF, &bufferinfo) < 0){
@@ -292,10 +292,10 @@ int main(int argc, char *argv[]) {
         // {
         //     ybuffer[j] = buffer[2*j];
         // }
-        // for(int j=0;j<N;j++)
-        // {
-        //     receive_image.at<unsigned char>(j) = buffer[2*j];
-        // }
+        for(int j=0;j<76800;j++)
+        {
+            receive_image.at<unsigned char>(j) = buffer[2*j];
+        }
         // printf("t2\n");
         
         memcpy(src,buffer,sizeof(uint32_t)*76800/2);
@@ -329,11 +329,11 @@ int main(int argc, char *argv[]) {
 				mask.at<unsigned char>(idxRows, idxCols) = dst[idxRows*320+idxCols];	//.to_uchar();
 			}
 		}
-        // string nm1 = "ipcoreim"+to_string(it)+".jpg";
-        // string nm2 = "originim"+to_string(it)+".jpg";
+        string nm1 = "ipcoreim"+to_string(it)+".jpg";
+        string nm2 = "originim"+to_string(it)+".jpg";
 
-        // imwrite(nm1,mask);
-        // imwrite(nm2,receive_image);
+        imwrite(nm1,mask);
+        imwrite(nm2,receive_image);
 
 		client.sendBinMask(mask);
 

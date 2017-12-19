@@ -323,7 +323,7 @@ int main(int argc, char *argv[]) {
 
         // Contour detection using opencv
 
-        // Mat mask = Mat(240, 320, CV_8UC1, dst); 
+        Mat mask = Mat(240, 320, CV_8UC1, dst); 
         // string nm1 = "ipcoreim"+to_string(it)+".jpg";
         // string nm2 = "originim"+to_string(it)+".jpg";
 

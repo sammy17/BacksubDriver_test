@@ -49,7 +49,6 @@
 #define M_AXI_BOUNDING 0x21000000
 #define M_AXI_FEATUREH 0x29000000
 
-#define 
 
 using namespace cv;
 using namespace std;
@@ -318,8 +317,10 @@ int main(int argc, char *argv[]) {
         // }
 
         // Contour detection using opencv
-;
+
         Mat mask = Mat(240, 320, CV_8UC1, dst); 
+
+	client.sendBinMask(mask);
 
         std::vector<cv::Rect> detections,found;
         

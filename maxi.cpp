@@ -268,7 +268,7 @@ int main(int argc, char *argv[]) {
     auto begin = std::chrono::high_resolution_clock::now();
     bool isFirst = true;
     Mat receive_image(240,320,CV_8UC1);
-    for (int it=0;it<10;it++){
+    for (int it=0;it<1000;it++){
         // Queue the buffer
        // auto begin = std::chrono::high_resolution_clock::now();
         if(ioctl(fd, VIDIOC_QBUF, &bufferinfo) < 0){

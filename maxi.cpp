@@ -157,8 +157,8 @@ int main(int argc, char *argv[]) {
     signal(SIGINT, signalHandler);
 
     // Initialization communication link
-    NodeClient client("10.0.0.200",8080);
-    client.connect();
+    // NodeClient client("10.0.0.200",8080);
+    // client.connect();
     uint16_t frameNo=0;
     const uint8_t cameraID = 0;
 
@@ -267,7 +267,8 @@ int main(int argc, char *argv[]) {
     /***************************** Begin looping here *********************/
     auto begin = std::chrono::high_resolution_clock::now();
     bool isFirst = true;
-    for (int it=0;it<1000;it++){
+    Mat receive_image(240,320,CV_8UC1);
+    for (int it=0;it<10;it++){
         // Queue the buffer
        // auto begin = std::chrono::high_resolution_clock::now();
         if(ioctl(fd, VIDIOC_QBUF, &bufferinfo) < 0){
@@ -291,6 +292,10 @@ int main(int argc, char *argv[]) {
         // {
         //     ybuffer[j] = buffer[2*j];
         // }
+        for(int j=0;j<N;j++)
+        {
+            receive_image.at<unsigned char>(j) = buffer[2*j];
+        }
         // printf("t2\n");
         
         memcpy(src,buffer,sizeof(uint32_t)*76800/2);
@@ -319,8 +324,13 @@ int main(int argc, char *argv[]) {
         // Contour detection using opencv
 
         Mat mask = Mat(240, 320, CV_8UC1, dst); 
+        string nm1 = "ipcoreim"+to_string(it)+".jpg";
+        string nm2 = "originim"+to_string(it)+".jpg";
 
-	client.sendBinMask(mask);
+        imwrite(nm1,mask);
+        imwrite(nm2,receive_image);
+
+		//client.sendBinMask(mask);
 
         std::vector<cv::Rect> detections,found;
         

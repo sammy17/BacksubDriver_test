@@ -58,7 +58,7 @@ using namespace std;
 
 
 XBacksub backsub;
-XFeature feature;
+//XFeature feature;
 
 int fdIP;
 int fd; // A file descriptor to the video device
@@ -74,24 +74,24 @@ uint16_t * m_axi_feature;
 
 
 
-int feature_init(XFeature * ptr){
-    ptr->Axilites_BaseAddress = (u32)mmap(NULL, AXILITE_RANGE, PROT_READ|PROT_WRITE, MAP_SHARED, fdIP, XPAR_FEATURE_0_S_AXI_AXILITES_BASEADDR);
-    ptr->Crtl_bus_BaseAddress = (u32)mmap(NULL, AXILITE_RANGE, PROT_READ|PROT_WRITE, MAP_SHARED, fdIP, XPAR_FEATURE_0_S_AXI_CRTL_BUS_BASEADDR);
-    ptr->IsReady = XIL_COMPONENT_IS_READY;
-    return 0;
-}
+// int feature_init(XFeature * ptr){
+//     ptr->Axilites_BaseAddress = (u32)mmap(NULL, AXILITE_RANGE, PROT_READ|PROT_WRITE, MAP_SHARED, fdIP, XPAR_FEATURE_0_S_AXI_AXILITES_BASEADDR);
+//     ptr->Crtl_bus_BaseAddress = (u32)mmap(NULL, AXILITE_RANGE, PROT_READ|PROT_WRITE, MAP_SHARED, fdIP, XPAR_FEATURE_0_S_AXI_CRTL_BUS_BASEADDR);
+//     ptr->IsReady = XIL_COMPONENT_IS_READY;
+//     return 0;
+// }
 
-void feature_rel(XFeature * ptr){
-    munmap((void*)ptr->Crtl_bus_BaseAddress, AXILITE_RANGE);
-    munmap((void*)ptr->Axilites_BaseAddress, AXILITE_RANGE);
-}
+// void feature_rel(XFeature * ptr){
+//     munmap((void*)ptr->Crtl_bus_BaseAddress, AXILITE_RANGE);
+//     munmap((void*)ptr->Axilites_BaseAddress, AXILITE_RANGE);
+// }
 
-void feature_config() {
-    printf("config\n");
-    XFeature_Set_frame_in(&feature,(u32)TX_BASE_ADDR);
-    XFeature_Set_bounding(&feature,(u32)M_AXI_BOUNDING);
-    XFeature_Set_featureh(&feature,(u32)M_AXI_FEATUREH);
-}
+// void feature_config() {
+//     printf("config\n");
+//     XFeature_Set_frame_in(&feature,(u32)TX_BASE_ADDR);
+//     XFeature_Set_bounding(&feature,(u32)M_AXI_BOUNDING);
+//     XFeature_Set_featureh(&feature,(u32)M_AXI_FEATUREH);
+// }
 
 
 
@@ -139,12 +139,12 @@ void signalHandler( int signum ) {
 
     //Release IP Core
     backsub_rel(&backsub);
-    feature_rel(&feature);
+    // feature_rel(&feature);
 
     munmap((void*)src, DDR_RANGE);
     munmap((void*)dst, DDR_RANGE);
-    munmap((void*)m_axi_bound, 80);
-    munmap((void*)m_axi_feature, 5120*2);
+    // munmap((void*)m_axi_bound, 80);
+    // munmap((void*)m_axi_feature, 5120*2);
 
     close(fdIP);
 

@@ -157,8 +157,8 @@ int main(int argc, char *argv[]) {
     signal(SIGINT, signalHandler);
 
     // Initialization communication link
-    NodeClient client("10.0.0.200",8080);
-    client.connect();
+    // NodeClient client("10.0.0.200",8080);
+    // client.connect();
     uint16_t frameNo=0;
     const uint8_t cameraID = 0;
 
@@ -335,7 +335,7 @@ int main(int argc, char *argv[]) {
         imwrite(nm1,mask);
         imwrite(nm2,receive_image);
 
-		client.sendBinMask(mask);
+		// client.sendBinMask(mask);
 
         std::vector<cv::Rect> detections,found;
         

@@ -157,8 +157,8 @@ int main(int argc, char *argv[]) {
     signal(SIGINT, signalHandler);
 
     // Initialization communication link
-    // NodeClient client("10.0.0.200",8080);
-    // client.connect();
+    NodeClient client("10.10.23.237",8080);
+    client.connect();
     uint16_t frameNo=0;
     const uint8_t cameraID = 0;
 
@@ -268,7 +268,7 @@ int main(int argc, char *argv[]) {
     auto begin = std::chrono::high_resolution_clock::now();
     bool isFirst = true;
     Mat receive_image(240,320,CV_8UC1);
-    for (int it=0;it<10;it++){
+    for (int it=0;it<100000;it++){
         // Queue the buffer
        // auto begin = std::chrono::high_resolution_clock::now();
         if(ioctl(fd, VIDIOC_QBUF, &bufferinfo) < 0){
@@ -332,10 +332,10 @@ int main(int argc, char *argv[]) {
         string nm1 = "ipcoreim"+to_string(it)+".jpg";
         string nm2 = "originim"+to_string(it)+".jpg";
 
-        imwrite(nm1,mask);
-        imwrite(nm2,receive_image);
+        //imwrite(nm1,mask);
+        //imwrite(nm2,receive_image);
 
-		// client.sendBinMask(mask);
+		client.sendBinMask(mask);
 
         std::vector<cv::Rect> detections,found;
         

@@ -25,20 +25,20 @@
 
 /* Definitions for peripheral BACKSUB_0 */
 #define XPAR_BACKSUB_0_DEVICE_ID 0
-#define XPAR_BACKSUB_0_S_AXI_CRTL_BUS_BASEADDR 0x43C10000
-#define XPAR_BACKSUB_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C1FFFF
 #define XPAR_BACKSUB_0_S_AXI_AXILITES_BASEADDR 0x43C00000
 #define XPAR_BACKSUB_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+#define XPAR_BACKSUB_0_S_AXI_CRTL_BUS_BASEADDR 0x43C10000
+#define XPAR_BACKSUB_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C1FFFF
 
 
 /******************************************************************/
 
 /* Canonical definitions for peripheral BACKSUB_0 */
 #define XPAR_XBACKSUB_0_DEVICE_ID XPAR_BACKSUB_0_DEVICE_ID
-#define XPAR_XBACKSUB_0_S_AXI_CRTL_BUS_BASEADDR 0x43C10000
-#define XPAR_XBACKSUB_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C1FFFF
 #define XPAR_XBACKSUB_0_S_AXI_AXILITES_BASEADDR 0x43C00000
 #define XPAR_XBACKSUB_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+#define XPAR_XBACKSUB_0_S_AXI_CRTL_BUS_BASEADDR 0x43C10000
+#define XPAR_XBACKSUB_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C1FFFF
 
 
 /******************************************************************/
@@ -150,29 +150,6 @@
 #define XPAR_XEMACPS_0_ENET_SLCR_100Mbps_DIV1 5
 #define XPAR_XEMACPS_0_ENET_SLCR_10Mbps_DIV0 8
 #define XPAR_XEMACPS_0_ENET_SLCR_10Mbps_DIV1 50
-
-
-/******************************************************************/
-
-/* Definitions for driver FEATURE */
-#define XPAR_XFEATURE_NUM_INSTANCES 1
-
-/* Definitions for peripheral FEATURE_0 */
-#define XPAR_FEATURE_0_DEVICE_ID 0
-#define XPAR_FEATURE_0_S_AXI_CRTL_BUS_BASEADDR 0x43C30000
-#define XPAR_FEATURE_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C3FFFF
-#define XPAR_FEATURE_0_S_AXI_AXILITES_BASEADDR 0x43C20000
-#define XPAR_FEATURE_0_S_AXI_AXILITES_HIGHADDR 0x43C2FFFF
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral FEATURE_0 */
-#define XPAR_XFEATURE_0_DEVICE_ID XPAR_FEATURE_0_DEVICE_ID
-#define XPAR_XFEATURE_0_S_AXI_CRTL_BUS_BASEADDR 0x43C30000
-#define XPAR_XFEATURE_0_S_AXI_CRTL_BUS_HIGHADDR 0x43C3FFFF
-#define XPAR_XFEATURE_0_S_AXI_AXILITES_BASEADDR 0x43C20000
-#define XPAR_XFEATURE_0_S_AXI_AXILITES_HIGHADDR 0x43C2FFFF
 
 
 /******************************************************************/
@@ -337,7 +314,6 @@
 
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
 #define XPAR_FABRIC_BACKSUB_0_INTERRUPT_INTR 61
-#define XPAR_FABRIC_FEATURE_0_INTERRUPT_INTR 62
 
 /******************************************************************/
 

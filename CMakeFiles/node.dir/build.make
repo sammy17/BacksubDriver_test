@@ -129,28 +129,28 @@ CMakeFiles/node.dir/detection/NodeClient.cpp.o.provides: CMakeFiles/node.dir/det
 CMakeFiles/node.dir/detection/NodeClient.cpp.o.provides.build: CMakeFiles/node.dir/detection/NodeClient.cpp.o
 
 
-CMakeFiles/node.dir/maxi.cpp.o: CMakeFiles/node.dir/flags.make
-CMakeFiles/node.dir/maxi.cpp.o: maxi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debian/BacksubDriver_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/node.dir/maxi.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/node.dir/maxi.cpp.o -c /home/debian/BacksubDriver_test/maxi.cpp
+CMakeFiles/node.dir/maxi_cv.cpp.o: CMakeFiles/node.dir/flags.make
+CMakeFiles/node.dir/maxi_cv.cpp.o: maxi_cv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debian/BacksubDriver_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/node.dir/maxi_cv.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/node.dir/maxi_cv.cpp.o -c /home/debian/BacksubDriver_test/maxi_cv.cpp
 
-CMakeFiles/node.dir/maxi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/node.dir/maxi.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debian/BacksubDriver_test/maxi.cpp > CMakeFiles/node.dir/maxi.cpp.i
+CMakeFiles/node.dir/maxi_cv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/node.dir/maxi_cv.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debian/BacksubDriver_test/maxi_cv.cpp > CMakeFiles/node.dir/maxi_cv.cpp.i
 
-CMakeFiles/node.dir/maxi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/node.dir/maxi.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debian/BacksubDriver_test/maxi.cpp -o CMakeFiles/node.dir/maxi.cpp.s
+CMakeFiles/node.dir/maxi_cv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/node.dir/maxi_cv.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debian/BacksubDriver_test/maxi_cv.cpp -o CMakeFiles/node.dir/maxi_cv.cpp.s
 
-CMakeFiles/node.dir/maxi.cpp.o.requires:
+CMakeFiles/node.dir/maxi_cv.cpp.o.requires:
 
-.PHONY : CMakeFiles/node.dir/maxi.cpp.o.requires
+.PHONY : CMakeFiles/node.dir/maxi_cv.cpp.o.requires
 
-CMakeFiles/node.dir/maxi.cpp.o.provides: CMakeFiles/node.dir/maxi.cpp.o.requires
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi.cpp.o.provides.build
-.PHONY : CMakeFiles/node.dir/maxi.cpp.o.provides
+CMakeFiles/node.dir/maxi_cv.cpp.o.provides: CMakeFiles/node.dir/maxi_cv.cpp.o.requires
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi_cv.cpp.o.provides.build
+.PHONY : CMakeFiles/node.dir/maxi_cv.cpp.o.provides
 
-CMakeFiles/node.dir/maxi.cpp.o.provides.build: CMakeFiles/node.dir/maxi.cpp.o
+CMakeFiles/node.dir/maxi_cv.cpp.o.provides.build: CMakeFiles/node.dir/maxi_cv.cpp.o
 
 
 CMakeFiles/node.dir/drivers/xbacksub.c.o: CMakeFiles/node.dir/flags.make
@@ -302,7 +302,7 @@ node_OBJECTS = \
 "CMakeFiles/node.dir/detection/BGSDetector.cpp.o" \
 "CMakeFiles/node.dir/detection/Detector.cpp.o" \
 "CMakeFiles/node.dir/detection/NodeClient.cpp.o" \
-"CMakeFiles/node.dir/maxi.cpp.o" \
+"CMakeFiles/node.dir/maxi_cv.cpp.o" \
 "CMakeFiles/node.dir/drivers/xbacksub.c.o" \
 "CMakeFiles/node.dir/drivers/xbacksub_linux.c.o" \
 "CMakeFiles/node.dir/drivers/xbacksub_sinit.c.o" \
@@ -316,7 +316,7 @@ node_EXTERNAL_OBJECTS =
 node: CMakeFiles/node.dir/detection/BGSDetector.cpp.o
 node: CMakeFiles/node.dir/detection/Detector.cpp.o
 node: CMakeFiles/node.dir/detection/NodeClient.cpp.o
-node: CMakeFiles/node.dir/maxi.cpp.o
+node: CMakeFiles/node.dir/maxi_cv.cpp.o
 node: CMakeFiles/node.dir/drivers/xbacksub.c.o
 node: CMakeFiles/node.dir/drivers/xbacksub_linux.c.o
 node: CMakeFiles/node.dir/drivers/xbacksub_sinit.c.o
@@ -355,7 +355,7 @@ CMakeFiles/node.dir/build: node
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/detection/BGSDetector.cpp.o.requires
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/detection/Detector.cpp.o.requires
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/detection/NodeClient.cpp.o.requires
-CMakeFiles/node.dir/requires: CMakeFiles/node.dir/maxi.cpp.o.requires
+CMakeFiles/node.dir/requires: CMakeFiles/node.dir/maxi_cv.cpp.o.requires
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/drivers/xbacksub.c.o.requires
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/drivers/xbacksub_linux.c.o.requires
 CMakeFiles/node.dir/requires: CMakeFiles/node.dir/drivers/xbacksub_sinit.c.o.requires

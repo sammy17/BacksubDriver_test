@@ -13,7 +13,7 @@ file(GLOB SOURCE_FILES
         "detection/*.cpp"
         "detection/*.hpp"
         "include/*.h"
-        "maxi.cpp"
+        "maxi_cv.cpp"
         "drivers/*.h"
         "drivers/*.c"
         )

@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/node.dir/detection/BGSDetector.cpp.o"
   "CMakeFiles/node.dir/detection/Detector.cpp.o"
   "CMakeFiles/node.dir/detection/NodeClient.cpp.o"
-  "CMakeFiles/node.dir/maxi.cpp.o"
+  "CMakeFiles/node.dir/maxi_cv.cpp.o"
   "CMakeFiles/node.dir/drivers/xbacksub.c.o"
   "CMakeFiles/node.dir/drivers/xbacksub_linux.c.o"
   "CMakeFiles/node.dir/drivers/xbacksub_sinit.c.o"

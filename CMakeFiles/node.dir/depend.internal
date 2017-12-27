@@ -36,7 +36,7 @@ CMakeFiles/node.dir/detection/NodeClient.cpp.o
  /home/debian/BacksubDriver_test/detection/MyTypes.h
  /home/debian/BacksubDriver_test/detection/NodeClient.cpp
  /home/debian/BacksubDriver_test/detection/NodeClient.h
-CMakeFiles/node.dir/maxi.cpp.o
+CMakeFiles/node.dir/maxi_cv.cpp.o
  /home/debian/BacksubDriver_test/detection/BGSDetector.h
  /home/debian/BacksubDriver_test/detection/Detector.h
  /home/debian/BacksubDriver_test/detection/MyTypes.h
@@ -47,4 +47,4 @@ CMakeFiles/node.dir/maxi.cpp.o
  /home/debian/BacksubDriver_test/drivers/xfeature_hw.h
  /home/debian/BacksubDriver_test/include/xparameters.h
  /home/debian/BacksubDriver_test/include/xparameters_ps.h
- /home/debian/BacksubDriver_test/maxi.cpp
+ /home/debian/BacksubDriver_test/maxi_cv.cpp

@@ -120,7 +120,7 @@ xparameters_ps.h
 
 /home/debian/BacksubDriver_test/include/xparameters_ps.h
 
-/home/debian/BacksubDriver_test/maxi.cpp
+/home/debian/BacksubDriver_test/maxi_cv.cpp
 drivers/xbacksub.h
 /home/debian/BacksubDriver_test/drivers/xbacksub.h
 drivers/xfeature.h
@@ -141,32 +141,6 @@ detection/MyTypes.h
 /home/debian/BacksubDriver_test/detection/MyTypes.h
 detection/BGSDetector.h
 /home/debian/BacksubDriver_test/detection/BGSDetector.h
-stdio.h
--
-stdlib.h
--
-linux/ioctl.h
--
-linux/types.h
--
-linux/v4l2-common.h
--
-linux/v4l2-controls.h
--
-linux/videodev2.h
--
-fcntl.h
--
-unistd.h
--
-sys/ioctl.h
--
-sys/mman.h
--
-string.h
--
-string
--
 csignal
 -
 

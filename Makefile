@@ -366,32 +366,32 @@ drivers/xfeature_sinit.c.s:
 	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/drivers/xfeature_sinit.c.s
 .PHONY : drivers/xfeature_sinit.c.s
 
-maxi.o: maxi.cpp.o
+maxi_cv.o: maxi_cv.cpp.o
 
-.PHONY : maxi.o
+.PHONY : maxi_cv.o
 
 # target to build an object file
-maxi.cpp.o:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi.cpp.o
-.PHONY : maxi.cpp.o
+maxi_cv.cpp.o:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi_cv.cpp.o
+.PHONY : maxi_cv.cpp.o
 
-maxi.i: maxi.cpp.i
+maxi_cv.i: maxi_cv.cpp.i
 
-.PHONY : maxi.i
+.PHONY : maxi_cv.i
 
 # target to preprocess a source file
-maxi.cpp.i:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi.cpp.i
-.PHONY : maxi.cpp.i
+maxi_cv.cpp.i:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi_cv.cpp.i
+.PHONY : maxi_cv.cpp.i
 
-maxi.s: maxi.cpp.s
+maxi_cv.s: maxi_cv.cpp.s
 
-.PHONY : maxi.s
+.PHONY : maxi_cv.s
 
 # target to generate assembly for a file
-maxi.cpp.s:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi.cpp.s
-.PHONY : maxi.cpp.s
+maxi_cv.cpp.s:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/maxi_cv.cpp.s
+.PHONY : maxi_cv.cpp.s
 
 # Help Target
 help:
@@ -429,9 +429,9 @@ help:
 	@echo "... drivers/xfeature_sinit.o"
 	@echo "... drivers/xfeature_sinit.i"
 	@echo "... drivers/xfeature_sinit.s"
-	@echo "... maxi.o"
-	@echo "... maxi.i"
-	@echo "... maxi.s"
+	@echo "... maxi_cv.o"
+	@echo "... maxi_cv.i"
+	@echo "... maxi_cv.s"
 .PHONY : help
 
 

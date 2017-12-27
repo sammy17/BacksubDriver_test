@@ -36,15 +36,15 @@ CMakeFiles/node.dir/detection/NodeClient.cpp.o: detection/MyTypes.h
 CMakeFiles/node.dir/detection/NodeClient.cpp.o: detection/NodeClient.cpp
 CMakeFiles/node.dir/detection/NodeClient.cpp.o: detection/NodeClient.h
 
-CMakeFiles/node.dir/maxi.cpp.o: detection/BGSDetector.h
-CMakeFiles/node.dir/maxi.cpp.o: detection/Detector.h
-CMakeFiles/node.dir/maxi.cpp.o: detection/MyTypes.h
-CMakeFiles/node.dir/maxi.cpp.o: detection/NodeClient.h
-CMakeFiles/node.dir/maxi.cpp.o: drivers/xbacksub.h
-CMakeFiles/node.dir/maxi.cpp.o: drivers/xbacksub_hw.h
-CMakeFiles/node.dir/maxi.cpp.o: drivers/xfeature.h
-CMakeFiles/node.dir/maxi.cpp.o: drivers/xfeature_hw.h
-CMakeFiles/node.dir/maxi.cpp.o: include/xparameters.h
-CMakeFiles/node.dir/maxi.cpp.o: include/xparameters_ps.h
-CMakeFiles/node.dir/maxi.cpp.o: maxi.cpp
+CMakeFiles/node.dir/maxi_cv.cpp.o: detection/BGSDetector.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: detection/Detector.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: detection/MyTypes.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: detection/NodeClient.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: drivers/xbacksub.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: drivers/xbacksub_hw.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: drivers/xfeature.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: drivers/xfeature_hw.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: include/xparameters.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: include/xparameters_ps.h
+CMakeFiles/node.dir/maxi_cv.cpp.o: maxi_cv.cpp
 

@@ -16,12 +16,17 @@
 // 0x18 : Data signal of frame_out
 //        bit 31~0 - frame_out[31:0] (Read/Write)
 // 0x1c : reserved
+// 0x20 : Data signal of para
+//        bit 31~0 - para[31:0] (Read/Write)
+// 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XBACKSUB_AXILITES_ADDR_FRAME_IN_DATA  0x10
 #define XBACKSUB_AXILITES_BITS_FRAME_IN_DATA  32
 #define XBACKSUB_AXILITES_ADDR_FRAME_OUT_DATA 0x18
 #define XBACKSUB_AXILITES_BITS_FRAME_OUT_DATA 32
+#define XBACKSUB_AXILITES_ADDR_PARA_DATA      0x20
+#define XBACKSUB_AXILITES_BITS_PARA_DATA      32
 
 // CRTL_BUS
 // 0x00 : Control signals

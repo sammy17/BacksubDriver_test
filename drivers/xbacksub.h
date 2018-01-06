@@ -94,6 +94,8 @@ void XBacksub_Set_frame_in(XBacksub *InstancePtr, u32 Data);
 u32 XBacksub_Get_frame_in(XBacksub *InstancePtr);
 void XBacksub_Set_frame_out(XBacksub *InstancePtr, u32 Data);
 u32 XBacksub_Get_frame_out(XBacksub *InstancePtr);
+void XBacksub_Set_para(XBacksub *InstancePtr, u32 Data);
+u32 XBacksub_Get_para(XBacksub *InstancePtr);
 void XBacksub_Set_init(XBacksub *InstancePtr, u32 Data);
 u32 XBacksub_Get_init(XBacksub *InstancePtr);
 

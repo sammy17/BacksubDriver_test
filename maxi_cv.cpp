@@ -16,6 +16,7 @@
 #define TX_BASE_ADDR 0x01000000
 #define DDR_RANGE 0x01000000
 #define RX_BASE_ADDR 0x02000000
+#define PARAM        0x14000000
 
 #define AXILITES_BASEADDR 0x43C00000
 #define CRTL_BUS_BASEADDR 0x43C10000
@@ -59,6 +60,7 @@ void backsub_config(bool ini) {
     XBacksub_Set_frame_out(&backsub,(u32)RX_BASE_ADDR);
     printf("config2\n");
     XBacksub_Set_init(&backsub, ini);
+    XBacksub_Set_para(&backsub, (u32)PARAM);
 }
 
 void print_config() {
